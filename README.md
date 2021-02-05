@@ -36,4 +36,4 @@ optional arguments:
 
 ## Sample HTML report
 
-[Sample Report](https://htmlpreview.github.io/?https://github.com/saravana815/pyscripts/blob/master/bgp_rpki_parsing/report.html)
+[Sample Report](https://htmlpreview.github.io/?https://github.com/saravana815/bgp_rpki_parsing/blob/master/report/bgp_rpki_report_10.51.117.224_20210204_144054.html)
