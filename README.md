@@ -12,8 +12,8 @@ Requirements
 ## Install steps
 ```
 pip3 install netmiko pandas numpy jinja2 matplotlib
-git clone https://github.com/saravana815/pyscripts.git
-cd pyscripts/bgp_rpki_parsing
+git clone https://github.com/saravana815/bgp_rpki_parsing.git
+cd bgp_rpki_parsing
 ```
 
 ## Usage
