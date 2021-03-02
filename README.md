@@ -18,19 +18,24 @@ cd bgp_rpki_parsing
 
 ## Usage
 ```
-[sargandh:SARGANDH-3QLQC]$ python3 bgp_rpki_parsing.py -h
 usage: bgp_rpki_parsing.py [-h] --host HOST --user USER --password PASSWORD
+                           [--report_dir REPORT_DIR]
 
 optional arguments:
-  -h, --help           show this help message and exit
-  --host HOST          router ip address
-  --user USER          router login username
-  --password PASSWORD  router login password
+  -h, --help            show this help message and exit
+  --host HOST           router ip address
+  --user USER           router login username
+  --password PASSWORD   router login password
+  --report_dir REPORT_DIR
+                        directory to place report files (Default dir : ./report/)
+                        
 [sargandh:SARGANDH-3QLQC]$
-[sargandh:SARGANDH-3QLQC]$  python3 bgp_rpki_parsing.py --host <router_IP> --user <user_name> --password <password>
+[sargandh:SARGANDH-3QLQC]$ python3  bgp_rpki_parsing.py --host 10.51.117.224 --user root --password ciscopass
 [sargandh:SARGANDH-3QLQC]$
-[sargandh:SARGANDH-3QLQC]$ ls -ltr bgp_rpki_report_10.51.117.224*
--rwxrwxrwx 1 sargandh sargandh 11717 Feb  1 13:24 bgp_rpki_report_10.51.117.224_20210201_132407.html <<---BGP RPKI report file
+[sargandh:SARGANDH-3QLQC]$ ls -lh report/
+total 32K
+-rwxrwxrwx 1 sargandh sargandh 3.9K Feb  4 14:40 bgp_rpki_report_10.51.117.224_20210204_144054.html  <<--- report file 
+-rwxrwxrwx 1 sargandh sargandh  27K Feb  4 14:40 plot_10.51.117.224_20210204_144054.svg              <<--- report graph
 [sargandh:SARGANDH-3QLQC]$
 ```
 
