@@ -137,7 +137,7 @@ def bgp_rpki_report(host, bgp_prefixes, report_dir):
 
     # create bar chart from pandas dataframe
     # ax = df.plot.pie(y='Prefix Count', figsize=(8, 8), autopct='%1.1f%%')
-    ax = df.plot.barh()
+    ax = df.plot.barh(figsize=(10, 200))
     for index, value in enumerate(prefix_count_list):
         ax.text(value, index, ' ' + str(value))
     fig = ax.get_figure()
